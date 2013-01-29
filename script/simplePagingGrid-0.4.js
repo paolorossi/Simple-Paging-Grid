@@ -426,7 +426,7 @@
                 var rowTemplateIndex = 0;
                 tbody.empty();
                 $.each(pageData, function (rowIndex, rowData) {
-                    var tr = $(settings.rowTemplates[rowTemplateIndex](rowTemplateIndex));
+                    var tr = $(settings.rowTemplates[rowTemplateIndex](rowData));
                     rowTemplateIndex++;
                     if (rowTemplateIndex >= settings.rowTemplates.length) {
                         rowTemplateIndex = 0;
