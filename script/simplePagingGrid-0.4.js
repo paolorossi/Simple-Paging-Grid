@@ -433,8 +433,8 @@
                     }
                     $.each(settings.columnKeys, function (index, propertyName) {
                         var td;
-                        if (settings.cellContainerTemplates !== null && index < settings.cellContainerTemplates.length && settings.cellContainerTemplates !== null) {
-                            td = $(settings.cellContainerTemplates[index](index));
+                        if (settings.cellContainerTemplates !== null && index < settings.cellContainerTemplates.length && settings.cellContainerTemplates[index] !== null) {
+                            td = $(settings.cellContainerTemplates[index](rowData));
                         } else {
                             td = $('<td>');
                         }
