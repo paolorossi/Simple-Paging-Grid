@@ -100,7 +100,7 @@ showGotoPage    |*(Optional*) If this is set to true and the grid is populated w
 showHeader      |*(Optional)* True to show the column headers, false to hide. Defaults to true.
 showPageNumbers |*(Optional)* If this is set to true and the grid is populated with an object that supplies the total number of rows (see below) then quick links to specific page numbers are shown in the button bar.
 sortable        |*(Optional)* An array of boolean values indicating if the grid can be sorted by the column. If unspecified then the grid is not sortable.
-sortorder       |*(Optional)* The starting sort order. Should be asc or desc.
+sortOrder       |*(Optional)* The starting sort order. Should be asc or desc.
 tableClass      |*(Optional*) The CSS class to assign to the created table. Defaults to *table* to give a basic Twitter Bootstrap styled table.
 templates       |*(Optional*)The Simple Paging Grid is built using a variety of templates for the various components. If you want to style things differently or change the controls then you can supply alternative templates instead. See below.
 
