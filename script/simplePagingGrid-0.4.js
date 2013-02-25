@@ -1,4 +1,4 @@
-﻿(function ($) {
+(function ($) {
     function dataPage(data, currentPage, pageSize) {
         return data.slice(currentPage * pageSize, currentPage * pageSize + pageSize);
     }
@@ -378,7 +378,7 @@
                                 loadData();
                                 buildButtonBar();
                                 hideLoading();
-                                if (settings.pageRenderedEvent !== null) settings.pageRenderedEvent(pageData);
+                                if (settings.pageRenderedEvent !== null) settings.pageRenderedEvent(pageData, numberOfRows);
                             },
                             error: function (jqXhr, textStatus, errorThrown) {
                                 if (settings.ajaxError !== null) {
@@ -403,7 +403,7 @@
                                 loadData();
                                 buildButtonBar();
                                 hideLoading();
-                                if (settings.pageRenderedEvent !== null) settings.pageRenderedEvent(pageData);
+                                if (settings.pageRenderedEvent !== null) settings.pageRenderedEvent(pageData, numberOfRows);
                             },
                             error: function (jqXhr, textStatus, errorThrown) {
                                 if (settings.ajaxError !== null) {
@@ -418,7 +418,7 @@
                     gridElement.currentData = pageData;
                     loadData();
                     buildButtonBar();
-                    if (settings.pageRenderedEvent !== null) settings.pageRenderedEvent(pageData);
+                    if (settings.pageRenderedEvent !== null) settings.pageRenderedEvent(pageData, numberOfRows);
                 }
             }
 
